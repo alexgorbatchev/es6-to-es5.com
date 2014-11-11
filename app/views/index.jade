@@ -7,25 +7,18 @@ html
     script(src="/source-map.min.js" async defer)
 
   body
-    h1 hello
+    .Header
+      h1.PageTitle JavaScript ES6 to ES5 online converter
+      .Author
+        img.Author-photo(src="/alexgorbatchev.jpeg")
+        .Author-name alexgorbatchev
 
-    .Editor
-      .Header
-        .u-layout-box
-          h1.PageTitle JavaScript ES6 to ES5 online converter
+    .Main
+      .LeftPane.Source
+        .CodeMirror-container
 
-      .Main
-        .LeftPane
-          .u-layout-box
-            .PaneTitle JavaScript ES6 (editable)
-            .Source
-              .CodeMirror-container
-
-        .RightPane
-          .u-layout-box
-            .PaneTitle JavaScript ES5
-            .Preview
-              .CodeMirror-container
+      .RightPane.Preview
+        .CodeMirror-container
 
 script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
 script(src="/thirdparty.js")

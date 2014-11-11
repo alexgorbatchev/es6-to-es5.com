@@ -1,6 +1,5 @@
 @header-height: 50px;
 @edge: 4px;
-@white-space: 0px;
 @pane-title-height: 30px;
 @sans: Helvetica, Arial, Verdana, sans-serif;
 @mono: 'Fira Mono', monospace;
@@ -18,16 +17,6 @@
   box-sizing: border-box;
 }
 
-.u-layout-box {
-  .box(0, 0, 0, 0);
-  background: #fff;
-  margin: @edge;
-}
-
-.Editor {
-  .box(5px, 5px, 5px, 5px);
-}
-
 .Header {
   position: absolute;
   top: 0;
@@ -40,16 +29,15 @@
 
 .Main {
   .box(@header-height, 0, 0, 0);
+  background: white;
 }
 
 .LeftPane {
-  .box(0, 50%, 0, 0);
-  margin-right: -@edge/2;
+  .box(1em, 50%, 1em, 1em);
 }
 
 .RightPane {
-  .box(0, 0, 0, 50%);
-  margin-left: -@edge/2;
+  .box(1em, 1em, 1em, 50%);
 }
 
 .PageTitle {
@@ -64,14 +52,12 @@
   margin: 0;
 }
 
-.Source {
-  .box(@pane-title-height, 0, 0, 0);
-}
+// .Source {
+// }
 
-.Preview {
-  .box(@pane-title-height, 0, 0, 0);
-}
+// .Preview {
+// }
 
 .CodeMirror-container {
-  .box(@white-space, @white-space, @white-space, @white-space);
+  .box(0, 0, 0, 0);
 }
