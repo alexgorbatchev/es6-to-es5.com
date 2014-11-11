@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title Hello
+    link(rel="stylesheet" href="/index.css" type="text/css")
+    script(src="/6to5.min.js" async defer)
+    script(src="/source-map.min.js" async defer)
+
+  body
+    h1 hello
+
+    .Editor
+      .Header
+        .u-layout-box
+          h1.PageTitle JavaScript ES6 to ES5 online converter
+
+      .Main
+        .LeftPane
+          .u-layout-box
+            .PaneTitle JavaScript ES6 (editable)
+            .Source
+              .CodeMirror-container
+
+        .RightPane
+          .u-layout-box
+            .PaneTitle JavaScript ES5
+            .Preview
+              .CodeMirror-container
+
+script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+script(src="/thirdparty.js")
+script(src="/index.js")

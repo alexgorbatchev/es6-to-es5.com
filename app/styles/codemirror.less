@@ -1,0 +1,49 @@
+@import (inline) 'bower_components/codemirror/lib/codemirror.css';
+@import (inline) 'bower_components/codemirror/theme/neat.css';
+@import (inline) 'bower_components/codemirror/addon/hint/show-hint.css';
+@import (inline) 'bower_components/codemirror/addon/dialog/dialog.css';
+
+.CodeMirror {
+  font-family: 'Fira Mono', monospace;
+  font-size: 1em;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.CodeMirror-scroll {
+  height: 100%;
+}
+
+.CodeMirror-lines {
+  margin-left: 10px;
+}
+
+.CodeMirror-linenumber {
+  margin-left: -10px;
+}
+
+.CodeMirror-gutters {
+  border-right: 3px solid #6ce26c;
+}
+
+.cm-header {
+  color: #000;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-weight: bold;
+}
+
+.CodeMirror-errors {
+  width: 0px;
+}
+
+.CodeMirror-errorMarker {
+  width: 15px;
+  margin-left: -12px;
+  background: red;
+  color: white;
+  text-shadow: 0px 1px black;
+  text-align: center;
+  border-radius: 2px;
+}
